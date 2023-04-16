@@ -1,0 +1,33 @@
+
+<ion-app >  
+  <ion-menu content-id="main" menuId="main-menu" side="start" type="reveal">
+    <ion-header>
+      <ion-toolbar class="my-page" color= #F3B0EE>
+        <ion-title class="ion-text-center">MANISAN</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item [routerLink]="['/video']">
+          <ion-icon name="videocam" slot="start"></ion-icon>
+          <ion-label>VIDEO</ion-label>
+          </ion-item>
+          <ion-item [routerLink]="['/about']">
+            <ion-icon name="heart" slot="start"></ion-icon>
+            <ion-label>ABOUT MANISAN</ion-label>
+            </ion-item>
+            <ion-item [routerLink]="['/promotion']">
+              <ion-icon name="bag-handle" slot="start"></ion-icon>
+              <ion-label>OUR PRODUCT</ion-label>
+              </ion-item>
+              <ion-item [routerLink]="['/membership']">
+                <ion-icon name="person-add" slot="start"></ion-icon>
+                <ion-label>MEMBERSHIP</ion-label>
+                </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  
+  <ion-router-outlet id="main"></ion-router-outlet>
+  <ion-back-button defaultHref="null" icon="arrow-back" ></ion-back-button>
+</ion-app>
